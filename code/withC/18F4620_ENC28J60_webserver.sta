@@ -1,0 +1,332 @@
+
+ROM used: 43196 (66%)
+          43198 (66%) including unused fragments
+
+          2 Average locations per line
+          15 Average locations per statement
+
+RAM used: 892 (22%) at main() level
+          1078 (27%) worst case
+
+Stack used: 15 worst case (out of 31 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  514    92   3  18F4620_ENC28J60_webserver.C
+  457     0   0  ..\..\..\..\Program Files\PICC\devices\18f4620.h
+  597   104   4  tcpip\stacktsk.c
+  578     0   0  tcpip\stacktsk.h
+  253     0   0  tcpip\pic18.h
+  194     0   0  tcpip\hardware.h
+  409     0   0  ..\..\..\..\Program Files\PICC\drivers\string.h
+   28     0   0  ..\..\..\..\Program Files\PICC\drivers\stddef.h
+   28     0   0  ..\..\..\..\Program Files\PICC\drivers\ctype.h
+ 1273   359  12  ..\..\..\..\Program Files\PICC\drivers\stdlib.h
+  279    49   2  tcpip\helpers.c
+   65     0   0  tcpip\helpers.h
+  222     0   0  tcpip\mac.h
+  578     0   0  tcpip\StackTsk.h
+  726     0   0  tcpip\ENC28J60.h
+  155    15   1  tcpip\tick.c
+  148     0   0  tcpip\tick.h
+ 2225   328  11  tcpip\enc28j60.c
+   65     0   0  tcpip\Helpers.h
+  222     0   0  tcpip\MAC.h
+  359     0   0  tcpip\udp.h
+  172     0   0  tcpip\dhcp.h
+   64     0   0  tcpip\http.h
+  307    39   1  tcpip\ip.c
+  258     0   0  tcpip\ip.h
+ 1945   578  20  tcpip\tcp.c
+  408     0   0  tcpip\tcp.h
+  257    33   1  tcpip\icmp.c
+  151     0   0  tcpip\icmp.h
+  696   134   5  tcpip\udp.c
+  832   282  10  tcpip\dhcp.c
+  213    31   1  tcpip\arptsk.c
+  118     0   0  tcpip\arp.h
+  128     0   0  tcpip\arptsk.h
+  243    53   2  tcpip\arp.c
+  882   297  10  tcpip\http.c
+   68     0   0  tcpip\announce.h
+  199    35   1  tcpip\announce.c
+  359     0   0  tcpip\UDP.h
+ 1078   227   8  ccshelper.c
+  163    66   2  tcpip\mlcd.c
+  142    57   2  ..\..\..\..\Program Files\PICC\drivers\AT25256.C
+  466   112   4  ccshelperui.c
+----- -----
+18524  2891 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     30   0   7             @READ_PROGRAM_MEMORY
+0     42   0   1             @delay_ms1
+0     36   0   1             @delay_us1
+0    202   0  12   485  7.8  memmove
+0    126   0  10   318  6.5  strncpy
+0    120   0   5   231  6.6  strcmp
+0     68   0   8   264  6.8  memchr
+0    122   0   9   288  6.0  strpbrk
+0    144   0   9   346  7.5  strspn
+0    176   0  10   475  7.2  strtok
+0     58   0   5   129  4.6  strlen
+0    264   0   6   436  7.9  stricmp
+0     80   0   2             @MUL88
+0     84   0   6             @MULS1616
+0    418   0   9  1815 10.5  atoi
+0    496   1  11  1817 10.4  atol
+0     94   0  14             @MUL3232
+0    878   1  52  2308 12.4  strtoul
+0    116   0   4   101  3.8  rand
+0     72   0   5             @DIV1616
+0     20   0   4    39  2.1  srand
+0     22   0   4   178  3.0  swaps
+0     34   0   8   325  3.2  swapl
+0    238   0  20   989  9.4  CalcIPChecksum
+0     22   0   0   138  2.9  TickInit
+0     26   0   2    86  2.1  TickGet
+0     32   0   0   230  1.8  Tick_Isr
+0     36   0   1   214  2.7  ENCSPIInit
+0     16   0   1    38  1.4  ENCSPIXfer
+0    464   1   2  3878 11.2  MACInit
+0     30   0   2    44  1.6  MACIsLinked
+0     42   0   2    91  2.7  MACIsTxReady
+0     42   0   2   118  3.9  MACGetTxBuffer
+0      2   0   1    22  1.0  MACDiscardTx
+0    110   0   2   636  7.5  MACDiscardRx
+0    282   0   6  1307  9.3  MACGetFreeRxSize
+0    316   0  26  1894 10.6  MACGetHeader
+0    206   0   8   989  9.0  MACPutHeader
+0    552   1   2  2697 11.5  MACFlush
+0    126   0   6   692  7.2  MACSetRxBuffer
+0    170   0   6   576  6.5  MACSetTxBuffer
+0    270   0   8  1582  9.2  MACCalcRxChecksum
+0    216   0   8   908  8.1  MACCalcTxChecksum
+0    344   0   6  1772 10.9  CalcIPBufferChecksum
+0     44   0   1   151  2.9  MACGet
+0    100   0   8   281  5.5  MACGetArray
+0     30   0   1   110  2.1  MACPut
+0     78   0   5   187  4.4  MACPutArray
+0     22   0   0    84  2.0  SendSystemReset
+0     42   0   3   158  3.1  ReadETHReg
+0     50   0   3   183  3.0  ReadMACReg
+0    156   0   4   444  4.3  ReadPHYReg
+0     30   0   3   123  2.8  WriteReg
+0     30   0   3   123  2.8  BFCReg
+0     30   0   3   123  2.8  BFSReg
+0    150   0   6   322  4.7  WritePHYReg
+0     54   0   5   149  4.7  BankSel
+0    160   0   5   647  6.3  MACSetDuplex
+0     20   0   1    53  1.7  UDPIsPutReady
+0    238   0  32   857  7.7  IPGetHeader
+0    304   0  29  1184  7.5  IPPutHeader
+0     26   0   4    33  1.7  IPSetRxBuffer
+0    224   0   6   183  1.9  SwapIPHeader
+0    326   0   5  1194  8.7  TCPInit
+0    252   0   7   761  7.6  TCPListen
+0     42   0   3    53  3.0  TCPIsConnected
+0    318   0  17   497  6.9  TCPDisconnect
+0    458   1  20   635  7.1  TCPFlush
+0    160   0   3   197  4.0  TCPIsPutReady
+0    252   0   7   414  7.3  TCPPutAvailable
+0    334   0   8   790  9.0  TCPPut
+0     78   0   5   200  5.1  TCPDiscard
+0    212   0   7   506  6.9  TCPGet
+0     44   0   3    52  2.6  TCPIsGetReady
+0   1186   1  22  3640 15.7  TCPTick
+0     54   0   0             @goto12159
+0    436   1  46  1562  9.6  TCPProcess
+0    570   1  58  3281 11.6  TransmitTCP
+0    478   1  12  1233  9.4  FindMatching_TCP_Socket
+0    550   1   8   409  2.9  SwapTCPHeader
+0    260   0   4   723  5.3  CloseSocket
+0   2782   3  36  7927 13.9  HandleTCPSeg
+0    238   0  89   785  7.4  ICMPGet
+0    284   0  87  1247  7.7  ICMPPut
+0    224   0   6   202  2.3  SwapICMPPacket
+0     30   0   1    99  2.7  UDPInit
+0    198   0  11   675  7.8  UDPOpen
+0    126   0   3   165  2.5  UDPClose
+0    318   0   9   800  7.8  UDPPut
+0    344   0  12  1458  6.7  UDPFlush
+0     70   0   3    76  2.9  UDPIsGetReady
+0    282   0   4   406  6.1  UDPGet
+0     96   0   2    88  2.9  UDPDiscard
+0    522   1  31  2326  8.8  UDPProcess
+0    420   0  14  1020  6.4  FindMatching_UDP_Socket
+0     44   0   0   197  4.0  DHCPReset
+0   1112   1  15  4153 13.9  DHCPTask
+0     52   0   0             @goto12761
+0   1084   1   9  5944 16.0  _DHCPReceive
+0    602   1   2  2694  6.2  _DHCPSend
+0     32   0   0   414  2.8  ARPInit
+0    146   0  11   511  8.0  ARPProcess
+0    226   0  34  1492  8.2  ARPGet
+0    400   0  36  1689  7.9  ARPPut
+0    212   0   6   187  2.1  SwapARPPacket
+0     68   0   0             @const1515
+0     74   0   0             @const1517
+0    236   0  12   626  8.4  http_escape_chars
+0    168   0  13   618  6.8  http_parse_cgi_string
+0      8   0   1    25  1.6  set_tcp_http_putc
+0     14   0   1    42  2.1  tcp_http_putc
+0    194   0  11   525  6.8  TCPPutFileVarChunk
+0    406   0  20   944  7.9  TCPPutFileParseConst
+0    216   0  12   746  7.4  TCPPutFileConstChunk
+0     44   0   5    88  2.5  TCPPutFileConstGetEscape
+0    820   1  18  2192 11.2  tcp_http_put_file
+0     14   0   0             @const1602
+0     42   0   3             @PSTRINGCN_1552
+0    190   0   9             @PRINTF_LU_1552
+0     10   0   0             @const1608
+0     16   0   0             @PSTRINGC_1552
+0     14   0   0             @const1610
+0     18   0   0             @const1611
+0     38   0   2             @PSTRINGR_1552
+0     10   0   0             @const1614
+0      6   0   0             @const1615
+0    106   0   3   386  5.1  HTTP_Init
+0   3202   4  14  7907 16.1  HTTP_Task
+0     64   0   3   198  5.0  InitAnnounce
+0    200   0  15  1012  6.7  AnnounceIP
+0     38   0   2             @PSTRINGR_1109
+0    158   0   4   317  6.0  AnnounceTask
+0     28   0   0   271  2.7  StackInit
+0    558   1   8  4025 11.1  StackTask
+0     52   0   0             @goto13689
+0      8   0   0             @PUTCHARI_BIU_1
+0     30   0   0             @const1704
+0     90   0   3   422  4.3  lcd_read_byte
+0     42   0   1   112  2.2  lcd_send_nibble
+0     84   0   3   290  3.9  lcd_send_byte
+0    134   0   2   479  5.7  lcd_init
+0     40   0   4   186  5.5  lcd_gotoxy
+0     92   0   1   272  4.1  lcd_putc
+0     20   0   1    94  1.7  init_ext_eeprom
+0     82   0   3   586  5.7  ext_eeprom_ready
+0    112   0  10   935  7.5  write_ext_eeprom
+0    102   0   9   882  6.1  read_ext_eeprom
+0    200   0   0   542  5.1  display_ip_lcd
+0     22   0   0             @const1745
+0     16   0   0             @PSTRINGC_1720
+0     44   0   3             @DIV88
+0    134   0   2             @PRINTF_U_1720
+0     16   0   0             @const1754
+0     18   0   0             @const1755
+0     58   0   7   121  2.3  write_ext_eeprom16
+0    146   0  10   334  4.7  read_ext_eeprom_ip
+0    168   0  10   334  4.7  write_ext_eeprom_ip
+0    298   0   3   918  4.3  clear_ee
+0     18   0   0             @const1783
+0     24   0   0             @const1784
+0     18   0   0             @PSTRINGC_9600_31766_31767
+0     32   0   0             @const1786
+0     16   0   0             @const1787
+0     26   0   1    48  1.6  init_eeprom_defaults
+0    318   0   0  2860  8.4  init
+0      8   0   0             @const1790
+0     16   0   0             @PSTRINGC_1640
+0    156   0  10   446  6.7  set_port_bit
+0     86   0   6   264  4.3  get_port_bit
+0    116   0   8   346  5.2  get_pin_string
+0      6   0   0             @const1809
+0     32   0   1             @SPRINTF
+0     16   0   0             @PSTRINGC_1811
+0    740   1  15  1900  5.9  hardware_io_test_pin
+0      8   0   0             @const1823
+0     22   0   0             @PSTRINGR_9600_31766_31767
+0     26   0   1             @PSTRINGCN_9600_31766_31767
+0     10   0   0             @const1828
+0     70   0   2             @PRINTF_X_9600_31766_31767
+0   1228   1   2  3281  7.9  hardware_test
+0     20   0   0             @const1838
+0      6   0   0             @const1839
+0      6   0   0             @const1840
+0     18   0   0             @const1841
+0      6   0   0             @const1842
+0     10   0   0             @const1843
+0     36   0   0             @const1844
+0     62   0   0             @const1845
+0     40   0   0             @const1846
+0     40   0   0             @const1847
+0     20   0   0             @const1848
+0     48   0   0             @const1849
+0     26   0   0             @const1850
+0     22   0   0             @const1851
+0      6   0   0             @const1852
+0     44   0   0             @const1853
+0     22   0   0             @const1854
+0    142   0   6   166  3.0  ui_disp_ip_user
+0    126   0   2             @PRINTF_U_9600_31766_31767
+0    334   0   1  1135  4.8  ui_settings
+0     34   0   0             @const1866
+0     18   0   0             @const1867
+0      6   0   0             @const1868
+0     16   0   0             @const1869
+0      6   0   0             @const1870
+0      6   0   0             @const1871
+0      6   0   0             @const1872
+0     16   0   0             @const1873
+0     12   0   0             @const1874
+0     12   0   0             @const1875
+0    164   0   7   793  9.5  fget_string
+0     70   0   6   178  3.2  fget_int
+0    134   0   2             @PRINTF_U_1811
+0     78   0   7   279  3.7  fgethex
+0     74   0   2             @PRINTF_X_1811
+0    188   0  10   387  5.1  ui_ip_to_ee
+0     12   0   0             @const1908
+0    348   0   6  1024  7.1  ui_setup
+0     16   0   0             @const1914
+0     14   0   0             @const1915
+0     22   0   0             @const1916
+0     18   0   0             @const1917
+0     14   0   0             @const1918
+0     14   0   0             @const1919
+0     34   0   0             @const1920
+0     38   0   0    99  1.5  ui_menu
+0     24   0   0             @const1922
+0     30   0   0             @const1923
+0     24   0   0             @const1924
+0     96   0   1   339  3.9  ui_handle
+0     20   0   0             @const1927
+0    794   1   0             @const1928
+0    238   0   0             @const1930
+0    138   0   7   312  5.5  http_get_page
+0     44   0   4   142  3.5  http_format_char_checked
+0     18   0   0             @const1942
+0    572   1  37  1862  9.2  http_format_char
+0     20   0   0             @const1946
+0     42   0   3             @PSTRINGCN_1811
+0     16   0   0             @const1949
+0      6   0   0             @const1951
+0    224   0  10   983  5.9  http_exec_cgi
+0     40   0   2             @PSTRINGR_1720
+0     44   0   0   123  1.6  splash
+0     16   0   0             @const1960
+0     20   0   0             @const1961
+0     26   0   0             @const1962
+0   1348   2   0   592  4.8  main
+
+Program metrics:
+    Functions               149
+    Statements              2891
+    Comments                11853
+    Volume (V)              251682
+    Difficilty (D)          881.6
+    Effort to implement (E) 221871404
+    Time to implement (T)   3423 hours, 56 minutes
+    Est Delivered Bugs (B)  122
+    Cyclomatic Complexity   447
+    Maintainability (MI)    131
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     2  2  
+00008-00094   142  0  
+00096-0FFFE  43048  22338  
+
+
+

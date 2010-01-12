@@ -1,0 +1,63 @@
+[PROJECT]
+Target=C:\Users\dorakengi\Desktop\HW\18F4620_ENC28J60_webserver.hex
+Development_Mode=
+Processor_Text=PIC18F4620
+ToolSuite=CCS
+Processor=0x4620
+[C:\Users\dorakengi\Desktop\HW\18F4620_ENC28J60_webserver]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+[mru-list]
+1=C:\Users\dorakengi\Desktop\HW\18F4620_ENC28J60_webserver.c
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+[Units]
+Link=0
+Count=1
+1=C:\Users\dorakengi\Desktop\HW\18F4620_ENC28J60_webserver
+[Opened Files]
+1=18F4620_ENC28J60_webserver.c
+2=
+3=ccshelper.c
+4=tcpip\stacktsk.c
+5=..\..\..\..\Program Files\PICC\TCP-IP\PIC Examples Source\ex_st_udp.c
+6=..\..\..\..\Program Files\PICC\devices\18f4620.h
+7=tcpip\stacktsk.h
+8=tcpip\pic18.h
+9=tcpip\hardware.h
+10=..\..\..\..\Program Files\PICC\drivers\string.h
+11=..\..\..\..\Program Files\PICC\drivers\stddef.h
+12=..\..\..\..\Program Files\PICC\drivers\ctype.h
+13=..\..\..\..\Program Files\PICC\drivers\stdlib.h
+14=tcpip\helpers.c
+15=tcpip\helpers.h
+16=tcpip\mac.h
+17=tcpip\ENC28J60.h
+18=tcpip\tick.c
+19=tcpip\tick.h
+20=tcpip\enc28j60.c
+21=tcpip\udp.h
+22=tcpip\dhcp.h
+23=tcpip\http.h
+24=tcpip\ip.c
+25=tcpip\ip.h
+26=tcpip\tcp.c
+27=tcpip\tcp.h
+28=tcpip\icmp.c
+29=tcpip\icmp.h
+30=tcpip\udp.c
+31=tcpip\dhcp.c
+32=tcpip\arptsk.c
+33=tcpip\arp.h
+34=tcpip\arptsk.h
+35=tcpip\arp.c
+36=tcpip\http.c
+37=tcpip\announce.h
+38=tcpip\announce.c
+39=tcpip\mlcd.c
+40=..\..\..\..\Program Files\PICC\drivers\AT25256.C
+41=
