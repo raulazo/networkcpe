@@ -1,0 +1,170 @@
+CCS PCH C Compiler, Version 4.100, 46564               12-Á.¤.-10 14:13
+
+               Filename: C:\Users\dorakengi\Desktop\HW\test\main.lst
+
+               ROM used: 210 bytes (0%)
+                         Largest free fragment is 65326
+               RAM used: 4 (0%) at main() level
+                         5 (0%) worst case
+               Stack:    1 locations
+
+*
+00000:  GOTO   0048
+.................... #include "C:\Users\dorakengi\Desktop\HW\test\main.h" 
+.................... #include <18F4620.h> 
+.................... //////// Standard Header file for the PIC18F4620 device //////////////// 
+.................... #device PIC18F4620 
+.................... #list 
+....................  
+.................... #device adc=8 
+....................  
+.................... #FUSES NOWDT                 	//No Watch Dog Timer 
+.................... #FUSES WDT128                	//Watch Dog Timer uses 1:128 Postscale 
+.................... #FUSES LP                    	//Low power osc < 200 khz 
+.................... #FUSES NOPROTECT             	//Code not protected from reading 
+.................... #FUSES IESO                  	//Internal External Switch Over mode enabled 
+.................... #FUSES NOBROWNOUT            	//No brownout reset 
+.................... #FUSES BORV21                	//Brownout reset at 2.1V 
+.................... #FUSES NOPUT                 	//No Power Up Timer 
+.................... #FUSES NOCPD                 	//No EE protection 
+.................... #FUSES STVREN                	//Stack full/underflow will cause reset 
+.................... #FUSES NODEBUG               	//No Debug mode for ICD 
+.................... #FUSES NOLVP                 	//No low voltage prgming, B3(PIC16) or B5(PIC18) used for I/O 
+.................... #FUSES NOWRT                 	//Program memory not write protected 
+.................... #FUSES NOWRTD                	//Data EEPROM not write protected 
+.................... #FUSES NOEBTR                	//Memory not protected from table reads 
+.................... #FUSES NOCPB                 	//No Boot Block code protection 
+.................... #FUSES NOEBTRB               	//Boot block not protected from table reads 
+.................... #FUSES NOWRTC                	//configuration not registers write protected 
+.................... #FUSES NOWRTB                	//Boot block not write protected 
+.................... #FUSES FCMEN                 	//Fail-safe clock monitor enabled 
+.................... #FUSES NOXINST               	//Extended set extension and Indexed Addressing mode disabled (Legacy mode) 
+.................... #FUSES PBADEN                	//PORTB pins are configured as analog input channels on RESET 
+.................... #FUSES LPT1OSC               	//Timer1 configured for low-power operation 
+.................... #FUSES MCLR                  	//Master Clear pin enabled 
+....................  
+.................... #use delay(clock=20000000) 
+00020:  CLRF   FEA
+00022:  MOVLW  05
+00024:  MOVWF  FE9
+00026:  MOVF   FEF,W
+00028:  BZ    0044
+0002A:  MOVLW  06
+0002C:  MOVWF  01
+0002E:  CLRF   00
+00030:  DECFSZ 00,F
+00032:  BRA    0030
+00034:  DECFSZ 01,F
+00036:  BRA    002E
+00038:  MOVLW  7B
+0003A:  MOVWF  00
+0003C:  DECFSZ 00,F
+0003E:  BRA    003C
+00040:  DECFSZ FEF,F
+00042:  BRA    002A
+00044:  GOTO   00CE (RETURN)
+.................... #use rs232(baud=9600,parity=N,xmit=PIN_C6,rcv=PIN_C7,bits=8) 
+....................  
+....................  
+....................  
+....................  
+.................... void main() 
+.................... { 
+00048:  CLRF   FF8
+0004A:  BCF    FD0.7
+0004C:  CLRF   FEA
+0004E:  CLRF   FE9
+00050:  BSF    FB8.3
+00052:  MOVLW  08
+00054:  MOVWF  FAF
+00056:  MOVLW  02
+00058:  MOVWF  FB0
+0005A:  MOVLW  A6
+0005C:  MOVWF  FAC
+0005E:  MOVLW  90
+00060:  MOVWF  FAB
+00062:  MOVF   FC1,W
+00064:  ANDLW  C0
+00066:  IORLW  0F
+00068:  MOVWF  FC1
+0006A:  MOVLW  07
+0006C:  MOVWF  FB4
+....................  
+....................    setup_adc_ports(NO_ANALOGS|VSS_VDD); 
+0006E:  MOVF   FC1,W
+00070:  ANDLW  C0
+00072:  IORLW  0F
+00074:  MOVWF  FC1
+....................    setup_adc(ADC_CLOCK_DIV_2|ADC_TAD_MUL_0); 
+00076:  MOVF   FC0,W
+00078:  ANDLW  C0
+0007A:  MOVWF  FC0
+0007C:  BCF    FC0.7
+0007E:  BSF    FC2.0
+....................    setup_psp(PSP_DISABLED); 
+00080:  BCF    F96.4
+....................    setup_spi(SPI_SS_DISABLED); 
+00082:  BCF    FC6.5
+00084:  BCF    F94.5
+00086:  BSF    F94.4
+00088:  BCF    F94.3
+0008A:  MOVLW  01
+0008C:  MOVWF  FC6
+0008E:  MOVLW  00
+00090:  MOVWF  FC7
+....................    setup_wdt(WDT_OFF); 
+00092:  BCF    FD1.0
+....................    setup_timer_0(RTCC_INTERNAL); 
+00094:  MOVLW  80
+00096:  MOVWF  FD5
+....................    setup_timer_1(T1_DISABLED); 
+00098:  CLRF   FCD
+....................    setup_timer_2(T2_DISABLED,0,1); 
+0009A:  MOVLW  00
+0009C:  MOVWF  FCA
+0009E:  MOVLW  00
+000A0:  MOVWF  FCB
+....................    setup_comparator(NC_NC_NC_NC); 
+000A2:  MOVLW  07
+000A4:  MOVWF  FB4
+000A6:  MOVF   F92,W
+000A8:  MOVWF  F92
+000AA:  MOVLW  10
+000AC:  MOVWF  00
+000AE:  DECFSZ 00,F
+000B0:  BRA    00AE
+000B2:  NOP   
+000B4:  MOVF   FB4,W
+000B6:  BCF    FA1.6
+....................    setup_vref(FALSE); 
+000B8:  CLRF   FB5
+.................... //Setup_Oscillator parameter not selected from Intr Oscillator Config tab 
+....................  
+....................    // TODO: USER CODE!! 
+....................    while(1){ 
+....................       output_high(PIN_D0); 
+000BA:  BCF    F95.0
+000BC:  BSF    F8C.0
+....................       printf("Hi!!\r\n"); 
+000BE:  MOVLW  04
+000C0:  MOVWF  FF6
+000C2:  MOVLW  00
+000C4:  MOVWF  FF7
+000C6:  BRA    000C
+....................       delay_ms(250); 
+000C8:  MOVLW  FA
+000CA:  MOVWF  05
+000CC:  BRA    0020
+....................    } 
+000CE:  BRA    00BA
+.................... } 
+000D0:  SLEEP 
+
+Configuration Fuses:
+   Word  1: C000   LP IESO FCMEN
+   Word  2: 0E19   NOBROWNOUT WDT128 NOWDT BORV21 NOPUT
+   Word  3: 8700   CCP2C1 PBADEN LPT1OSC MCLR
+   Word  4: 0081   STVREN NODEBUG NOLVP NOXINST
+   Word  5: C00F   NOPROTECT NOCPD NOCPB
+   Word  6: E00F   NOWRT NOWRTD NOWRTC NOWRTB
+   Word  7: 400F   NOEBTR NOEBTRB

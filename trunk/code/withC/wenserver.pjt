@@ -1,0 +1,26 @@
+[PROJECT]
+Target=C:\Users\dorakengi\Desktop\HW\wenserver.hex
+Development_Mode=
+Processor_Text=PIC16F887
+ToolSuite=CCS
+[C:\Users\dorakengi\Desktop\HW\wenserver]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+[mru-list]
+1=C:\Users\dorakengi\Desktop\HW\wenserver.c
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+[Units]
+Link=0
+Count=1
+1=C:\Users\dorakengi\Desktop\HW\wenserver
+[Opened Files]
+1=wenserver.c
+2=..\..\..\..\Program Files\PICC\devices\16F887.h
+3=tcpip\pic18.h
+4=..\..\..\..\Program Files\PICC\TCP-IP\PIC Examples Source\ex_st_webserver.c
+5=

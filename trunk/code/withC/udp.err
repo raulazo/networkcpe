@@ -1,0 +1,28 @@
+>>> Warning 201 "C:\Users\dorakengi\Desktop\HW\tcpip\helpers.c" Line 189(1,1): Assignment inside relational expression
+>>> Warning 201 "C:\Users\dorakengi\Desktop\HW\tcpip\helpers.c" Line 264(1,1): Assignment inside relational expression
+>>> Warning 207 "C:\Users\dorakengi\Desktop\HW\tcpip\icmp.c" Line 116(1,1): Code has no effect
+>>> Warning 207 "C:\Users\dorakengi\Desktop\HW\tcpip\icmp.c" Line 153(1,1): Code has no effect
+>>> Warning 207 "C:\Users\dorakengi\Desktop\HW\tcpip\udp.c" Line 352(1,1): Code has no effect
+>>> Warning 207 "C:\Users\dorakengi\Desktop\HW\tcpip\udp.c" Line 360(1,1): Code has no effect
+>>> Warning 207 "C:\Users\dorakengi\Desktop\HW\tcpip\udp.c" Line 556(1,1): Code has no effect
+>>> Warning 207 "C:\Users\dorakengi\Desktop\HW\tcpip\udp.c" Line 593(1,1): Code has no effect
+>>> Warning 207 "C:\Users\dorakengi\Desktop\HW\tcpip\udp.c" Line 606(1,1): Code has no effect
+>>> Warning 207 "C:\Users\dorakengi\Desktop\HW\tcpip\udp.c" Line 613(1,1): Code has no effect
+>>> Warning 207 "C:\Users\dorakengi\Desktop\HW\tcpip\arp.c" Line 116(1,1): Code has no effect
+>>> Warning 207 "C:\Users\dorakengi\Desktop\HW\tcpip\stacktsk.c" Line 390(1,1): Code has no effect
+>>> Warning 207 "C:\Users\dorakengi\Desktop\HW\tcpip\stacktsk.c" Line 395(1,1): Code has no effect
+>>> Warning 207 "C:\Users\dorakengi\Desktop\HW\tcpip\stacktsk.c" Line 399(1,1): Code has no effect
+>>> Warning 207 "C:\Users\dorakengi\Desktop\HW\tcpip\stacktsk.c" Line 403(1,1): Code has no effect
+>>> Warning 207 "C:\Users\dorakengi\Desktop\HW\tcpip\stacktsk.c" Line 427(1,1): Code has no effect
+>>> Warning 207 "C:\Users\dorakengi\Desktop\HW\tcpip\stacktsk.c" Line 458(1,1): Code has no effect
+>>> Warning 207 "C:\Users\dorakengi\Desktop\HW\tcpip\stacktsk.c" Line 468(1,1): Code has no effect
+>>> Warning 207 "C:\Users\dorakengi\Desktop\HW\tcpip\stacktsk.c" Line 475(1,1): Code has no effect
+>>> Warning 207 "C:\Users\dorakengi\Desktop\HW\tcpip\stacktsk.c" Line 483(1,1): Code has no effect
+>>> Warning 207 "C:\Users\dorakengi\Desktop\HW\tcpip\stacktsk.c" Line 516(1,1): Code has no effect
+>>> Warning 207 "C:\Users\dorakengi\Desktop\HW\tcpip\stacktsk.c" Line 538(1,1): Code has no effect
+>>> Warning 225 "C:\Users\dorakengi\Desktop\HW\ccshelper.c" Line 267(28,38): Duplicate #define
+>>> Warning 201 "C:\Users\dorakengi\Desktop\HW\ccshelperui.c" Line 143(1,1): Assignment inside relational expression
+>>> Warning 202 "udp.C" Line 363(21,27): Variable never used:   remote
+>>> Warning 202 "udp.C" Line 364(20,28): Variable never used:   lastTick
+      Memory usage:   ROM=72%      RAM=19% - 28%
+      0 Errors,  26 Warnings.

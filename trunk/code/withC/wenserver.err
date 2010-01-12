@@ -1,0 +1,6 @@
+*** Error 111 "wenserver.C" Line 112(8,16): Unknown keyword in #FUSES   "NOFCMEN"
+*** Error 111 "wenserver.C" Line 113(8,16): Unknown keyword in #FUSES   "NOXINST"
+*** Error 111 "wenserver.C" Line 114(8,15): Unknown keyword in #FUSES   "NOIESO"
+*** Error 111 "wenserver.C" Line 115(8,17): Unknown keyword in #FUSES   "NOPBADEN"
+*** Error 111 "wenserver.C" Line 116(8,13): Unknown keyword in #FUSES   "MCLR"
+      5 Errors,  0 Warnings.
